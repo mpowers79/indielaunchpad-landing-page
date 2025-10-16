@@ -44,6 +44,14 @@ h2 {
   text-align: center;
 }
 
+.large-image {
+  width: 1294px;
+  position: relative;
+  left: 50%;
+  margin-left: -647px;
+  display: block;
+}
+
 /* * Button Styles 
  */
 button, .button {
