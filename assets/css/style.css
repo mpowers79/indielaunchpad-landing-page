@@ -22,10 +22,24 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
-  max-width: 700px; /* Default max width */
   margin: 0 auto; /* Center the body on the page */
-  padding: 20px; /* Add some padding so content isn't flush against edges */
 }
+.container-narrow {
+  max-width: 720px; /* A good width for readable text */
+  margin-left: auto;  /* This is the key to centering */
+  margin-right: auto; /* This is the key to centering */
+  padding: 0 2rem; /* Safety padding for small screens */
+}
+
+/* This is for your "breakout" elements like the mockup and logo */
+.container-wide {
+  max-width: 1100px; /* The wider container for visuals */
+  margin-left: auto;   /* This also centers the wide container */
+  margin-right: auto;  /* This also centers the wide container */
+  padding: 0 2rem;  /* Safety padding for small screens */
+}
+
+
 
 /* * Typography and Text Utility 
  */
@@ -55,8 +69,10 @@ h2 {
 }
 
 .logo {
-  position: relative;
-  margin-left: -647px;
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 /* * Button Styles 
