@@ -33,7 +33,7 @@ body {
 
 /* This is for your "breakout" elements like the mockup and logo */
 .container-wide {
-  max-width: 1100px; /* The wider container for visuals */
+  max-width: 1300px; /* The wider container for visuals */
   margin-left: auto;   /* This also centers the wide container */
   margin-right: auto;  /* This also centers the wide container */
   padding: 0 2rem;  /* Safety padding for small screens */
