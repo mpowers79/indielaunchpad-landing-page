@@ -1,0 +1,79 @@
+/*
+ * Basic Style Sheet
+ * Font: Inter
+ * Line Height: 1.6
+ */
+
+/* Google Fonts - Inter import (You'd typically link this in the HTML <head> or import here) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  /* Colors */
+  --text-color: rgb(36, 35, 36);
+  --subtle-text-color: rgb(77, 79, 80);
+  --background-color: #fafafb;
+  --button-bg-color: rgb(240, 70, 57);
+}
+
+/* * Global Styles 
+ */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 700px; /* Default max width */
+  margin: 0 auto; /* Center the body on the page */
+  padding: 20px; /* Add some padding so content isn't flush against edges */
+}
+
+/* * Typography and Text Utility 
+ */
+p, li {
+  color: var(--text-color);
+}
+
+.subtle-text {
+  color: var(--subtle-text-color);
+}
+
+/* * Button Styles 
+ */
+button, .button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-bg-color);
+  color: #ffffff; /* White text for contrast on the red button */
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* For .button used on <a> tags */
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: rgb(200, 60, 48); /* Slightly darker on hover */
+}
+.profile-container {
+            /* Sets a max width to keep the content readable */
+  max-width: 800px;
+  margin: 20px auto; /* Centers the container on the page */
+  padding: 20px;
+  border: 0px solid #ccc; 
+}
+
+.headshot {
+  float: left;
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 15px;
+  margin-bottom: 10px; 
+}
+
+.clear-float {
+  clear: both;
+}
